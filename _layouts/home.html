@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  {%- assign latest_post = site.posts | first -%}
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ latest_post.title | escape }}</h1>
+    </header>
+
+    <div class="post-content">
+      {{ latest_post.content }}
+    </div>
+  </article>
+  {%- endif -%}
+
+  {%- if site.posts.size > 1 -%}
+  <h2 class="post-list-heading">{{ page.list_title | default: "Older Posts" }}</h2>
+  <ul class="post-list">
+    {%- assign other_posts = site.posts | shift -%}
+    {%- for post in other_posts -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
