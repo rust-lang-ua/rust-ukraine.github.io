@@ -14,7 +14,7 @@ Hello, again, long time no see! We're back, and we're meeting again. The meetup 
   2. **Command-line scripting with Rust. Wait, what?!** by [Andrey Listochkin](https://twitter.com/listochkin)
   <br> Andrey is a co-organizer of [KyivJS](http://kyivjs.org) and [JavaScript fwdays 2020](https://fwdays.com/en/event/js-fwdays-2020) program committee member.
 
-**[Registration is open now](https://forms.gle/Dp5yp5EPfZJENRR88)**, the event is free, but space is limited, so please reserve your spot while it's still available!
+**Registration is oopen soon**, the event is free, but space is limited, so please reserve your spot while it's still available!
 
 Rust Ukraine Meetup will take place on Thursday, December 12 at [Rails Reactor office (Kyiv, 35 Yamska street, 18th floor)](https://goo.gl/maps/jYnwbVVVLQpR6wrC7). Talks start at 19:00.
 
